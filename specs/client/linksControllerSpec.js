@@ -22,7 +22,6 @@ describe('LinksController', function () {
         Links: Links
       });
     };
-
   }));
 
   it('should have a data property on the $scope', function () {
