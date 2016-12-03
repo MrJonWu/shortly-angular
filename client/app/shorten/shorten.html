@@ -1,4 +1,4 @@
-<div id='container'>
+<div id='container' ng-controller='ShortenController'>
 <!-- Your code here -->
   <div class='navigation'>
     <ul>
@@ -9,12 +9,15 @@
     </div>
   <div id='container'></div>
   <span>Give me a link to shorten</span>
-  <form ng-controller="ShortenController">
-      <input ng-model="link.url" class='text' type='url' name='url' required>
-      <input ng-click="addLink()" type='submit' value='Shorten'>
+  <form name='urlForm' ng-submit='submitForm(urlForm.$valid)' novalidate>
+      <input ng-model="link.url" class='text' type='text' name='url' ng-pattern="isValid" required>
+      <p class="error" ng-show="urlForm.url.$invalid && !urlForm.url.$pristine">Enter a valid URL</p>
+      <input type='submit' value='Shorten'>
   </form>
   <img class='spinner' src='../assets/spiffygif_46x46.gif'>
   <div class='message'></div>
+
+
 </div>
 
 
