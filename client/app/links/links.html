@@ -7,7 +7,7 @@
     </ul>
     </div>
   <div id='container'></div>
-  <div class='info' ng-repeat="url in data.links">
+  <div class='info' ng-repeat="url in data.links | orderBy:'-visits'">
     <div class='visits'><span class='count'>{{url.visits}}</span>Visits</div>
     <div class='title'>{{url.title}}</div>
     <div class='original'>{{url.url}}</div>

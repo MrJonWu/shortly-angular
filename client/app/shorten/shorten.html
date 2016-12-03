@@ -10,7 +10,7 @@
   <div id='container'></div>
   <span>Give me a link to shorten</span>
   <form ng-controller="ShortenController">
-      <input ng-model="link.url" class='text' type='text' name='url' required>
+      <input ng-model="link.url" class='text' type='url' name='url' required>
       <input ng-click="addLink()" type='submit' value='Shorten'>
   </form>
   <img class='spinner' src='../assets/spiffygif_46x46.gif'>
