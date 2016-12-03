@@ -1,4 +1,19 @@
 <div id='container'>
   <!-- Your html here -->
-  hello this is a test
+  <div class='navigation'>
+    <ul>
+      <li><a href='#/links' class='index'>All Links</a></li>
+      <li><a href='#/shorten' class='create'>Shorten</a></li>
+    </ul>
+      <a href='/logout' class='logout'>Logout</a>
+    </div>
+  <div id='container'></div>
+  <span>Hello: Here are the links</span>
+  <img src='../assets/redirect_icon.png'/>
+  <div class='info'>
+    <div class='visits'><span class='count'>{{visits}}</span>Visits</div>
+    <div class='title'>{{title}}</div>
+    <div class='original'>{{url}}</div>
+    <a href='{{baseUrl}}/{{code}}'>{{baseUrl}}/{{code}}</a>
+  </div>
 </div>
