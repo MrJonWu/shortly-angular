@@ -31,6 +31,10 @@ h1 {
   float: left;
 }
 
+.navigation .logout {
+  float: right;
+}
+
 .navigation li a {
   width: 100px;
   height: 20px;
@@ -97,6 +101,10 @@ form {
   margin: 10px;
 }
 
+.filterForm {
+  margin: 20px;
+}
+
 input {
   width: 360px;
   display: block;
@@ -133,6 +141,7 @@ input[type=url]:focus {
 .creator form {
   float: left;
   height: 80px;
+  margin: 20px;
 }
 
 .creator img.spinner {

@@ -31,26 +31,6 @@ angular.module('shortly.shorten', [])
   };
 
   $scope.addLink = function() {
-
-    // console.log($scope.link.url.$valid);
-
-    Links.addOne($scope.link);
-
-    // if ($scope.link.url.indexOf('http://') === - 1) {
-    //   $scope.link.url = 'http://' + $scope.link.url;
-    // }
-    // if ($scope.link.url.match(rValidUrl)) {
-    //   console.log('VALID');
-    //   Links.addOne($scope.link);
-    //   // $scope.link.url = '';
-    // } else {
-    //   console.log('INVALID URL');
-    //   //$scope.link.url = 'PLEASE USE A VALID URL';
-    // }    
+    Links.addOne($scope.link);  
   };
 });
-
-  // <form name='urlForm' ng-submit='submitForm(urlForm.$valid)' novalidate>
-  //     <input ng-model="link.url" class='text' type='url' name='url' required>
-  //     <input type='submit' value='Shorten'>
-  // </form>
